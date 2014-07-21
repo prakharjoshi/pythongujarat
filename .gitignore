@@ -1,0 +1,6 @@
+*.pyc
+.pydevproject
+venv
+staticfiles
+*.sublime-*
+*.py~
