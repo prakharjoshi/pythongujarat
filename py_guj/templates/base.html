@@ -1,40 +1,26 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
     <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/stylesheet.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="{{STATIC_URL}}css/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/print.css" media="print" />
-    <link rel="alternate" type="application/atom+xml" title="Atom Feed for PythonPune" href="/atom.xml" />
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>  
-    <script type="text/javascript" src="{{STATIC_URL}}js/jquery.tinysort.min.js"></script>  
-    <title>PythonPune - Presence of Python Pune Community on Internet</title>
-    <script type="text/javascript">
-      function page_callback() {
-        // do nothing;
-      }
-    </script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>   
+    <title>PyGuj - Presence of Python Gujarat Community on Internet</title>
   </head>
-
   <body>
-
     <header>
       <div class="container" id="header_menu">
-        <a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
         <table border=0 cellspacing=0>
           <tr>
             <td>
-              <h1><a href="/">PythonPune</a></h1>
-              <h2>Pune Pythonistas and their discussions and events.</h2>
+              <h1><a href="/">PyGuj</a></h1>
+              <h2>Gujarat Pythonistas, their events and discussions.</h2>
             </td>                      
             <td>
               <div class="subscription-box">
-                <!-- <img src="https://groups.google.com/forum/my-groups-color.png" alt="Google Groups">  -->
-                <h4>Subscribe to PythonPune Google Group</h4>                          
-                <form action="http://groups.google.com/group/PythonPune/boxsubscribe">
+                <h4>Subscribe to PyGuj Google Group</h4>                          
+                <form action="http://groups.google.com/group/pyguj/boxsubscribe">
                   Email: <input type=text name=email>
                   <input type=submit name="sub" value="Subscribe">	
                 </form>
@@ -44,23 +30,20 @@
         </table>
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="#" target="_blank">Google Group</a></li>
+          <li><a href="https://www.facebook.com/PyGuj" target="_blank">Facebook</a></li>
           <li><a href="/meetings">Meetings</a></li>
           <li><a href="/blog">Blog</a></li>
           <li><a href="/members">Members</a></li>
           <li><a href="/resources">Resources</a></li>
-          <!--
-          <br/>
-          <li><a href="/companies">Company Catalog <em>(Under Construction)</em></a></li>
-          <li><a href="http://python-india-jobs.github.com">Python India Jobs <em>(Under Construction)</em></a></li>
-          -->
         </ul>
       </div>
     </header>
-    <body>
-        {% block content %}
-        {% endblock %}
-    </body>
-
-       
+    <div class="container">
+      {% block content %}
+      {% endblock %}
+      <section id="footer">
+        <p>Site maintained by <a href="https://github.com/prakharjoshi" target=_blank>@prakhar</a> and <a href="https://github.com/Somsubhra" target=_blank>@somsubhra</a></p>
+      </section>
+    </div>
+  </body>
 </html>
