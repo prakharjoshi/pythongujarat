@@ -94,7 +94,6 @@ app = webapp2.WSGIApplication([
     ('/blog', BlogHandler),
     ('/members', MembersHandler),
     ('/resources', ResourcesHandler),
-    ('/python-resources', PythonResourcesHandler),
     ('/posting-policy', PostingPolicyHandler),
     ('/git-and-pull-requests', GitAndPRHandler),
     ('/welcome', WelcomeHandler),
